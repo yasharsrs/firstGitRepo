@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Shopping Cart</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Product Section -->
+  <main>
+    <section class="products-section">
+      <h2>Best Clothing Collection</h2> 
+  <div class="product-container">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="T-Shirt">
+      <h3>Adult Ultra Cotton T-Shirt</h3>
+      <p>Simple t-shirt for daily use</p>
+      <p class="price"><span class="new">$29.99</span> <span class="old">$35.99</span></p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="Men's Shirt">
+      <h3>Athletic Men's Short Sleeve</h3>
+      <p>Simple t-shirt for daily use</p>
+      <p class="price"><span class="new">$63.99</span> <span class="old">$80.00</span></p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="Tech T-Shirt">
+      <h3>Under Armour UA Tech T-Shirt</h3>
+      <p>Lightweight fabric and comfort fit</p>
+      <p class="price"><span class="new">$25.99</span> <span class="old">$34.99</span></p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="Women's T-Shirt">
+      <h3>Women's Basic Short Sleeve</h3>
+      <p>Classic t-shirt for daily use</p>
+      <p class="price"><span class="new">$29.99</span> <span class="old">$35.99</span></p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="Hoodie">
+      <h3>Comfy Cotton Hoodie</h3>
+      <p>Soft and warm for everyday wear</p>
+      <p class="price"><span class="new">$49.99</span> <span class="old">$59.99</span></p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</section> 
+    </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Shopping Cart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+  
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+background-color: #f5f5f5;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo {
+font-size: 1.5rem;
+color: #333;
+}
+.nav-links {
+list-style: none;
+display: flex;
+gap: 1.5rem;
+}
+.nav-links a {
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+.nav-links a:hover {
+color: #007bff;
+}
+/* Product Section */
+.products-section {
+text-align: center;
+padding: 2rem;
+background-color: #fafafa;
+}
+.products-section h2 {
+margin-bottom: 2rem;
+font-size: 2rem;
+}
+.product-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5rem;
+}
+.product-card {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 1rem;
+width: 220px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.product-card img {
+width: 100%;
+border-radius: 6px;
+}
+.product-card h3 {
+margin: 0.8rem 0 0.4rem;
+font-size: 1rem;
+color: #222;
+}
+.product-card p {
+font-size: 0.9rem;
+color: #666;
+}
+.price {
+margin: 0.5rem 0;
+}
+.price .new {
+font-weight: bold;
+color: #28a745;
+}
+.price .old {
+text-decoration: line-through;
+color: #999;
+font-size: 0.85rem;
+}
+button {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 0.6rem 1.2rem;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+button:hover {
+background-color: #0056b3;
+}
+/* Footer */
+footer {
+background-color: #f5f5f5;
+text-align: center;
+padding: 1rem;
+font-size: 0.9rem;
+color: #555;
+margin-top: 2rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+.product-container {
+flex-direction: column;
+align-items: center;
+}
+}
